@@ -1,0 +1,24 @@
+<html>
+<body>
+<title>registration</title>
+<h1>registration</h1>
+<form onsubmit="event.preventDefault();show()">
+  <input id="n" placeholder="Name" required><br><br>
+  <input id="e" placeholder="Email" required><br><br>
+  <input id="a" placeholder="Address" required><br><br>
+  <button>Submit</button>
+</form>
+
+<div id="o"></div>
+
+<script>
+function show(){
+  o.innerHTML = `
+    <p><b>Name:</b> ${n.value}</p>
+    <p><b>Email:</b> ${e.value}</p>
+    <p><b>Address:</b> ${a.value}</p>`;
+}
+</script>
+
+</body>
+</html>
